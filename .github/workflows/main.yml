@@ -16,6 +16,5 @@ jobs:
 
       - uses: actions/checkout@v3
 
-      - name: after
-        run: ls
-      
+      - name: login docker
+        run: docker login --username yousef13 --password yousef@123
