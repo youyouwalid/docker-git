@@ -12,8 +12,10 @@ jobs:
 
     steps:
       - name: Checkout repository
-        run: pwd
+        run: ls
 
-      - name: Checkout printing
-        run: echo yousef_walid
+      - uses: actions/checkout@v3
+
+      - name: Checkout repository
+        run: ls
       
