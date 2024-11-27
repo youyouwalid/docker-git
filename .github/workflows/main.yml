@@ -11,10 +11,13 @@ jobs:
     runs-on: ubuntu-latest
 
     steps:
-      - name: befor
-        run: ls
-
       - uses: actions/checkout@v3
 
       - name: login docker
         run: docker login --username yousef13 --password yousef@123
+
+      - name: "docker img"
+        run: docker build -t yousef13/myimg .
+
+      - name: "docker push"
+        run: docker push yousef13/myimg .
