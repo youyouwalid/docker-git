@@ -14,6 +14,6 @@ jobs:
       - name: Checkout repository
         run: pwd
 
-        name: Checkout printing
+      - name: Checkout printing
         run: echo yousef_walid
       
